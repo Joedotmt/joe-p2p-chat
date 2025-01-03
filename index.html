@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="setup-box" id="setupBox">
+            <h2>P2P Chat Setup</h2>
+            <div class="connection-controls">
+                <div class="create-room">
+                    <button id="createBtn">Create Room</button>
+                    <div id="roomId" class="room-id"></div>
+                </div>
+                <div class="join-room">
+                    <input type="text" id="joinInput" placeholder="Enter Room ID">
+                    <button id="joinBtn">Join Room</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-box hidden" id="chatBox">
+            <div class="chat-header">
+                <h2>Chat Room</h2>
+                <button id="copyLink">Copy Room ID</button>
+            </div>
+            <div class="messages" id="messages"></div>
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
